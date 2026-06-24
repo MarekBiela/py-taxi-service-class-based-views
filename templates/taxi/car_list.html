@@ -15,14 +15,14 @@
     <tr>
       <td>
         <a href="{% url 'taxi:car-detail' pk=car.id %}">
-            {{ car.id }}
+          {{ car.id }}
         </a>
       </td>
       <td>{{ car.model }}</td>
       <td>{{ car.manufacturer.name }}</td>
       <td>
         {% for driver in car.drivers.all %}
-            {{ driver.license_number }}
+          {{ driver.license_number }}
         {% endfor %}
       </td>
     </tr>
